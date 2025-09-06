@@ -14,6 +14,32 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "skeleton-input",
+      "type": "registry:component",
+      "title": "Skeleton Input",
+      "description": "An input shaped loading skeleton",
+      "registryDependencies": ["skeleton"],
+      "files": [
+        {
+          "path": "registry/default/skeleton-input/SkeletonInput.vue",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-card",
+      "type": "registry:component",
+      "title": "Switch Card",
+      "description": "Switch inside a card",
+      "registryDependencies": ["label", "switch"],
+      "files": [
+        {
+          "path": "registry/default/switch-card/SwitchCard.vue",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
