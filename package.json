@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "registry:build": "shadcn-vue build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build --output-dir /dist/storybook"
+    "build-storybook": "storybook build --output-dir dist/storybook"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
