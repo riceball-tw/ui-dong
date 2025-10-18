@@ -22,8 +22,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm registry:build
-      - run: pnpm build-storybook
-
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
+          install_command: pnpm install
+          build_command: pnpm build-storybook
           checkout: false
