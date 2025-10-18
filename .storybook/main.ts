@@ -12,7 +12,9 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-a11y",
     "@storybook/addon-vitest",
-    "@storybook/addon-postcss"
+    "@storybook/addon-postcss",
+    "storybook-dark-mode",
+    "@storybook/addon-themes"
   ],
   "framework": {
     "name": "@storybook/vue3-vite",
