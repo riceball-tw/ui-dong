@@ -1,7 +1,31 @@
-# More Shadcn Vue
+# UI DONG
+```
+ ██╗   ██╗ ██╗     ██████╗   ██████╗  ███╗   ██╗  ██████╗ 
+ ██║   ██║ ██║     ██╔══██╗ ██╔═══██╗ ████╗  ██║ ██╔════╝ 
+ ██║   ██║ ██║     ██║  ██║ ██║   ██║ ██╔██╗ ██║ ██║  ███╗
+ ██║   ██║ ██║     ██║  ██║ ██║   ██║ ██║╚██╗██║ ██║   ██║
+ ╚██████╔╝ ██║     ██████╔╝ ╚██████╔╝ ██║ ╚████║ ╚██████╔╝
+  ╚═════╝  ╚═╝     ╚═════╝   ╚═════╝  ╚═╝  ╚═══╝  ╚═════╝ 
+```
+> More components built on top of [shadcn/vue](https://www.shadcn-vue.com/) and [Reka](https://reka-ui.com/).
 
-> A Shadcn registry that has more components to utilize
+## Why?
 
-## Credits
+Instead install components via npm, just copy ui dong components into your app, and customize as you see fit.
 
-- [shadcn-vue](https://github.com/unovue/shadcn-vue)
+Preview all the components on: [UI DONG Storybook](https://riceball-tw.github.io/ui-dong/storybook/)
+
+## How to Start
+
+- Copy and paste component code on [GitHub](https://github.com/riceball-tw/ui-dong/tree/main)
+- Download through shadcn-vue CLI from registry, for example:
+  ```
+  pnpm dlx shadcn-vue@latest add https://riceball-tw.github.io/ui-dong/r/hello-world.json
+  ```
+
+
+
+
+
+
+## 
