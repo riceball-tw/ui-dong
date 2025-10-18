@@ -53,6 +53,19 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "sensitive-input",
+      "type": "registry:component",
+      "title": "Sensitive Input",
+      "description": "A sensitive input that can be used to show/hide the sensitive data.",
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "registry/default/sensitive-input/SensitiveInput.vue",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
