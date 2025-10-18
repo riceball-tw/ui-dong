@@ -40,6 +40,19 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "circular-progress",
+      "type": "registry:component",
+      "title": "Circular Progress",
+      "description": "A circular progress indicator.",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/default/circular-progress/CircularProgress.vue",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
