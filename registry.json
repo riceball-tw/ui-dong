@@ -66,6 +66,24 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "window-tabs",
+      "type": "registry:component",
+      "title": "Window Tabs",
+      "description": "A window tabs component.",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/default/window-tabs/WindowTabs.vue",
+          "type": "registry:component"
+        },
+        {
+          "target": "registry/default/window-tabs/windowTabs.type.ts",
+          "path": "registry/default/window-tabs/windowTabs.type.ts",
+          "type": "registry:file"
+        }
+      ]
     }
   ]
 }
