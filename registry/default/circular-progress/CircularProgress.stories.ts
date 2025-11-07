@@ -7,6 +7,11 @@ const meta = {
   component: CircularProgress,
   tags: ['autodocs'],
   args: { progress: 50 },
+  argTypes: {
+    progress: {
+      control: { type: 'range', min: 0, max: 100, step: 1 },
+    },
+  },
   parameters: {
     docs: {
       description: {
