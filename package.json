@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "preview": "vite preview",
     "registry:build": "shadcn-vue build",
     "storybook": "storybook dev -p 6006",
