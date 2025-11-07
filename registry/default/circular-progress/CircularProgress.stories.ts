@@ -14,6 +14,25 @@ const meta = {
       },
     },
   },
+  render: (args) => ({
+    components: { CircularProgress },
+    setup() {
+      return { args }
+    },
+    template: `
+    <div class="flex gap-4">
+      <div style="max-width: 50px" class="text-xs">
+        <CircularProgress :progress="args.progress" />
+      </div>
+      <div style="max-width: 100px" class="text-2xl">
+        <CircularProgress :progress="args.progress" />
+      </div>
+      <div style="max-width: 300px" class="text-5xl">
+        <CircularProgress :progress="args.progress" />
+      </div>
+    </div>
+    `,
+  }),
 } satisfies Meta<typeof CircularProgress>
 
 export default meta
