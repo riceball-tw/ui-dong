@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
   label: 'Label',
   sublabel: '(Sublabel)',
   description: 'A short description goes here.',
-  id: 'switch-card'
+  id: 'switch-card',
 })
 
 const emit = defineEmits<{
@@ -24,7 +24,7 @@ const emit = defineEmits<{
 
 const checked = computed({
   get: () => props.modelValue,
-  set: (val: boolean) => emit('update:modelValue', val)
+  set: (val: boolean) => emit('update:modelValue', val),
 })
 </script>
 

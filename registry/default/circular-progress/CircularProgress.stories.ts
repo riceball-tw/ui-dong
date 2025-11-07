@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3-vite';
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 
 import CircularProgress from './CircularProgress.vue'
 
@@ -14,7 +14,7 @@ const meta = {
       },
     },
   },
-  render: (args) => ({
+  render: args => ({
     components: { CircularProgress },
     setup() {
       return { args }

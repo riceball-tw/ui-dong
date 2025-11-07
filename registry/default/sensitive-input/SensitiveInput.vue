@@ -1,10 +1,33 @@
+<script setup lang="ts">
+import { useVModel } from '@vueuse/core'
+import { ref } from 'vue'
+import Input from '@/components/ui/input/Input.vue'
+import { cn } from '@/lib/utils.ts'
+
+const props = defineProps<{
+  defaultValue?: string | number
+  modelValue?: string | number
+}>()
+
+const emits = defineEmits<{
+  (e: 'update:modelValue', payload: string | number): void
+}>()
+
+const modelValue = useVModel(props, 'modelValue', emits, {
+  passive: true,
+  defaultValue: props.defaultValue,
+})
+
+const showPassword = ref(false)
+</script>
+
 <template>
   <div class="relative">
     <Input
+      v-model="modelValue"
       data-testid="password-input"
       :type="showPassword ? 'text' : 'password'"
       :class="cn('pr-9')"
-      v-model="modelValue"
     />
     <!-- eslint-disable-next-line vuejs-accessibility/no-static-element-interactions -->
     <div
@@ -13,8 +36,8 @@
       @click="showPassword = !showPassword"
     >
       <svg
-        class="size-4"
         v-if="showPassword"
+        class="size-4"
         xmlns="http://www.w3.org/2000/svg"
         width="32"
         height="32"
@@ -27,8 +50,8 @@
         />
       </svg>
       <svg
-        class="size-4"
         v-else
+        class="size-4"
         xmlns="http://www.w3.org/2000/svg"
         width="32"
         height="32"
@@ -43,26 +66,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import Input from "@/components/ui/input/Input.vue";
-import { cn } from "@/lib/utils.ts";
-import { useVModel } from "@vueuse/core";
-import { ref } from "vue";
-
-const props = defineProps<{
-  defaultValue?: string | number;
-  modelValue?: string | number;
-}>();
-
-const emits = defineEmits<{
-  (e: "update:modelValue", payload: string | number): void;
-}>();
-
-const modelValue = useVModel(props, "modelValue", emits, {
-  passive: true,
-  defaultValue: props.defaultValue,
-});
-
-const showPassword = ref(false);
-</script>
