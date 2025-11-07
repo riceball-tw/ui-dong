@@ -1,13 +1,20 @@
-import type { Preview } from '@storybook/vue3-vite'
-import '../src/style.css';
 import { withThemeByClassName } from '@storybook/addon-themes';
+import { themes } from '@storybook/theming';
+import type { Preview } from '@storybook/vue3-vite';
+import '../src/style.css';
 
 const preview: Preview = {
   parameters: {
+    darkMode: {
+      // Override the default dark theme
+      dark: { ...themes.dark },
+      // Override the default light theme
+      light: { ...themes.normal }
+    },
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
 
