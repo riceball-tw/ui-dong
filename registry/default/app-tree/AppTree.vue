@@ -384,7 +384,7 @@ function addItem(parentNode: T, newNode: T) {
         <TreeVirtualizer
           v-slot="{ item }: { item: any }"
           :items="flattenItems"
-          :text-content="(opt) => getText ? getText(opt.value) : ''"
+          :text-content="(opt: Record<string, any>) => getText ? getText(opt.value) : ''"
           :estimate-size="props.estimateVirtualizedSize"
         >
           <AppTreeItemDraggable
